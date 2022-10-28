@@ -1,5 +1,8 @@
-﻿using AsocjacjeWykladNr03.Models;
+﻿using AsocjacjeWykladNr03.Interfaces;
+using AsocjacjeWykladNr03.Models;
+using AsocjacjeWykladNr03.Others;
 using AsocjacjeWykladNr03.Tools;
+using System.Collections.Generic;
 
 namespace AsocjacjeWykladNr03.Runner
 {
@@ -47,6 +50,17 @@ namespace AsocjacjeWykladNr03.Runner
                 //todo: dodać pozostałe
                 .Build();
 
+
+
+            List<IPrint> textDistributor = new List<IPrint>();
+            string wiadomosc = "7:30, prawdziwe dotnetowe treści!";
+            textDistributor.Add(new Printer());
+            textDistributor.Add(new Kindle());
+
+            foreach (var print in textDistributor)
+            {
+                print.Print(wiadomosc);
+            }
         }
     }
 }
