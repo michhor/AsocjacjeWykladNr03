@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AsocjacjeWykladNr03\AsocjacjeWykladNr03.csproj">
+      <Project>{F444AB79-33D9-4C8C-9819-3155A0083252}</Project>
+      <Name>AsocjacjeWykladNr03</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

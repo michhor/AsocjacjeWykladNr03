@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\PracownikBuilder.cs" />
+    <Compile Include="Models\Adres.cs" />
+    <Compile Include="Models\Obserwator.cs" />
+    <Compile Include="Models\Pracownik.cs" />
+    <Compile Include="Models\Uzytkownik.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
