@@ -37,6 +37,12 @@ namespace AsocjacjeWykladNr03.Runner
                 // itd....
                 .BuildP;
 
+
+            Console.WriteLine("W: ");
+            Console.WriteLine(obSimple);
+            Console.WriteLine(uzytkownikSimple);
+            Console.WriteLine(newModernWorker);
+
         }
     }
 }
